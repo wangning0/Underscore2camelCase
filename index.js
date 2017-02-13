@@ -21,7 +21,7 @@
     var _isBoolean = function(obj) {
         return toString.call(obj) === '[object Boolean]';
     };
-    var _isNumerical = function(obj) {
+    var _isNumberical = function(obj) {
         obj = obj - 0;
         return obj === obj;
     };
@@ -91,7 +91,7 @@
         return output;
     };
     
-    var underscope2camelcase = {
+    var underscore2camelCase = {
         camelize: camelize,
         decamelize: decamelize,
         pascalize: pascalize,
@@ -111,11 +111,11 @@
     };
 
     if(typeof define === 'function' && define.amd) {
-        define(underscope2camelcase);
+        define(underscore2camelCase);
     } else if(typeof module !== 'undefined' && module.exports) {
-        module.exports = underscope2camelcase;
+        module.exports = underscore2camelCase;
     } else {
-        global.underscope2camelcase = underscope2camelcase;
+        global.underscore2camelCase = underscore2camelCase;
     }
 
 })(this);
