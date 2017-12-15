@@ -6,7 +6,7 @@
     var _isFunction = function(obj) {
         return typeof(obj) === 'function';
     };
-    var isObject = function(obj) {
+    var _isObject = function(obj) {
         return obj === Object(obj);
     };
     var _isArray = function(obj) {
